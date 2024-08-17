@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morpion</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">Bienvenue sur le jeu du Morpion !</h1>
+    </header>
+
+    <main class="Jeu">
+        <div id="playerForm">
+            <h2>Veuillez ajouter votre nom de joueur :</h2>
+            <label for="playerX">Nom du joueur X :</label>
+            <input type="text" id="playerX" name="playerX" placeholder="Joueur X">
+            <br>
+            <label for="playerO">Nom du joueur O :</label>
+            <input type="text" id="playerO" name="playerO" placeholder="Joueur O">
+            <br>
+            <button id="startGame">Commencer le jeu</button>
+        </div>
+        <div class="board" id="board" style="display: none;">
+            <div class="cell" data-cell=""></div>
+            <div class="cell" data-cell=""></div>
+            <div class="cell" data-cell=""></div>
+            <div class="cell" data-cell=""></div>
+            <div class="cell" data-cell=""></div>
+            <div class="cell" data-cell=""></div>
+            <div class="cell" data-cell=""></div>
+            <div class="cell" data-cell=""></div>
+            <div class="cell" data-cell=""></div>
+        </div>
+        <div class="annonce"></div>
+        <div class="recommencer" style="display: none;"></div>
+        <div class="changer-joueurs" style="display: none;"></div>
+    </main>
+
+    <footer>
+
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
